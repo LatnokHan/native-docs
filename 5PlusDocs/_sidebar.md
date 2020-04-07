@@ -1,25 +1,20 @@
 * 简介
-	* [简介](README.md)
+	* [概述](/5PlusDocs/README.md)
 * 集成教程
-	* [Android](UniMPDocs/UseSdk/android.md)
-	* [iOS](UniMPDocs/UseSdk/ios.md)
-* 功能点
-	* [启动小程序](/UniMPDocs/Sample/start.md)
-	* [关闭小程序](/UniMPDocs/Sample/close.md) 
-	* [宿主-小程序通讯](/UniMPDocs/Sample/event.md) 
+	* [Android](/5PlusDocs/usesdk/android.md)
+	* [iOS](/5PlusDocs/usesdk/ios.md)
 * 内置功能模块集成
-	* [Android](/UniMPDocs/UseModule/android.md)
-	* [iOS](/UniMPDocs/UseModule/ios.md)
-* 扩展原生能力
-	* [Android](/UniMPDocs/Extension/android.md)
-	* [iOS](/UniMPDocs/Extension/ios.md)
-* 下载
-	* [Android](UniMPDocs/SDKDownload/android.md)
-	* [iOS](/UniMPDocs/SDKDownload/ios.md)
-	* [源码公开策略](/UniMPDocs/SDKDownload/opensource.md)
-* 常见问题
-	* [Android](/UniMPDocs/FAQ/android.md)
-	* [iOS](/UniMPDocs/FAQ/ios.md)
+	* [Android](/5PlusDocs/usemodule/android.md)
+	* [iOS](/5PlusDocs/usemodule/ios.md)
+* 导入App打包资源
+	* [Android](/5PlusDocs/importfeproject/android.md)
+	* [iOS](/5PlusDocs/importfeproject/ios.md)
+* 生成安装包
+	* [Android](/5PlusDocs/package/android.md)
+	* [iOS](/5PlusDocs/package/ios.md)
+* SDK 下载
+	* [Android](/5PlusDocs/android.md)
+	* [iOS](/5PlusDocs/ios.md)
 <div class="contact-box">
 	<div class="contact-item">
 	  <img src="//img-cdn-qiniu.dcloud.net.cn/uniapp/doc/qq@2x.png" width="20" height="20"/>
