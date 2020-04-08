@@ -3,18 +3,18 @@
 
 	<head>
 		<meta charset="UTF-8">
-		<title>uni-app官网</title>
+		<title>uni-nativesupport</title>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 		<meta name="description" content="uni-app：一个使用 Vue.js 开发跨平台应用的前端框架">
 		<meta name="keywords" content="uni-app,uniapp,小程序,微信小程序,小程序解决方案,微信小程序解决方案,快应用,DCloud,混合app,app开发,hbuilder,hybrid,native,webview,unimpsdk,uni小程序,uni小程序SDK">
 		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-		<link rel="shortcut icon" type="image/x-icon" href="//img-cdn-qiniu.dcloud.net.cn/uniapp/doc/icon.png?v=1556263038786">
+		<link rel="shortcut icon" type="image/x-icon" href="//img-cdn-qiniu.dcloud.net.cn/uniapp/doc/icon.png?v=1586316635415">
 		<link rel="stylesheet" href="/static/vue.css">
-		<link rel="stylesheet" href="/static/index.min.css?v=1559299190794">
+		<link rel="stylesheet" href="/static/index.min.css?v=1586316635415">
 	</head>
 
 	<body>
-		<div id="app"></div>
+		<div id="app">Please wait...</div>
 		<script>
 			// docsify config start
 			window.$docsify = {
@@ -22,7 +22,6 @@
 					'/.*/_navbar.md': '/_navbar.md',
 					'/(.*)/.*/_sidebar.md': '/$1/_sidebar.md',
 				},
-				homepage: 'README.md',
 				name: 'uni-native',
 				// TODO 如需提交,必须改为 history 模式
 				routerMode: 'history',
@@ -35,10 +34,10 @@
 				mdCache: 7200000,
 				search: {
 					maxAge: 7200000,
-					paths: ['/5PlusDocs/download/android','/5PlusDocs/download/ios','/5PlusDocs/import_fe_project/android','/5PlusDocs/import_fe_project/ios','/5PlusDocs/package/android','/5PlusDocs/package/ios','/5PlusDocs/summary','/5PlusDocs/use_module/android','/5PlusDocs/use_module/ios','/5PlusDocs/use_sdk/android','/5PlusDocs/use_sdk/ios','/','/UniMPDocs/Extension/android','/UniMPDocs/Extension/ios','/UniMPDocs/FAQ/android','/UniMPDocs/FAQ/ios','/UniMPDocs/SDKDownload/android','/UniMPDocs/SDKDownload/ios','/UniMPDocs/SDKDownload/opensource','/UniMPDocs/Sample/close','/UniMPDocs/Sample/event','/UniMPDocs/Sample/menubutton','/UniMPDocs/Sample/start','/UniMPDocs/UseModule/android','/UniMPDocs/UseModule/ios','/UniMPDocs/UseSdk/android','/UniMPDocs/UseSdk/ios'],
+					paths: ['/5PlusDocs/README','/5PlusDocs/download/android','/5PlusDocs/download/ios','/5PlusDocs/importfeproject/android','/5PlusDocs/importfeproject/ios','/5PlusDocs/package/android','/5PlusDocs/package/ios','/5PlusDocs/usemodule/android','/5PlusDocs/usemodule/ios','/5PlusDocs/usesdk/android','/5PlusDocs/usesdk/ios','/','/UniMPDocs/Extension/android','/UniMPDocs/Extension/ios','/UniMPDocs/FAQ/android','/UniMPDocs/FAQ/ios','/UniMPDocs/README','/UniMPDocs/SDKDownload/android','/UniMPDocs/SDKDownload/ios','/UniMPDocs/SDKDownload/opensource','/UniMPDocs/Sample/close','/UniMPDocs/Sample/event','/UniMPDocs/Sample/menubutton','/UniMPDocs/Sample/start','/UniMPDocs/UseModule/android','/UniMPDocs/UseModule/ios','/UniMPDocs/UseSdk/android','/UniMPDocs/UseSdk/ios','/zh-cn/guide'],
 					placeholder: '搜索',
 					noData: '没有结果',
-					depth: 4
+					depth: 6
 				},
 				maxLevel: 4,
 				subMaxLevel: 3,
@@ -54,9 +53,14 @@
 			}
 			// docsify config end
 		</script>
-		<script src="/static/docsify.min.js?v=1556263038788"></script>
-		<script src="/static/search.min.js?v=1559299190620"></script>
-		<script src="/static/preview.min.js?v=1556263038786"></script>
+		<script src="/static/docsify.min.js?v=1586316635415"></script>
+		<script src="/static/search.min.js?v=1586316635415"></script>
+		<script src="/static/preview.min.js?v=1586316635415"></script>
+		<!-- <script src="//unpkg.com/docsify/lib/docsify.min.js"></script> -->
+		<!-- <script src="//unpkg.com/docsify/lib/plugins/search.js"></script> -->
+		<script src="//unpkg.com/docsify/lib/plugins/emoji.js"></script>
+		<script src="//unpkg.com/docsify/lib/plugins/external-script.js"></script>
+		<script src="//unpkg.com/docsify-copy-code"></script>
 		<script>
 			var _hmt = _hmt || [];
 			(function() {
