@@ -1,20 +1,5 @@
 * 简介
-	* [概述](/5PlusDocs/README.md)
-* 集成教程
-	* [Android](/5PlusDocs/usesdk/android.md)
-	* [iOS](/5PlusDocs/usesdk/ios.md)
-* 内置功能模块集成
-	* [Android](/5PlusDocs/usemodule/android.md)
-	* [iOS](/5PlusDocs/usemodule/ios.md)
-* 导入App打包资源
-	* [Android](/5PlusDocs/importfeproject/android.md)
-	* [iOS](/5PlusDocs/importfeproject/ios.md)
-* 生成安装包
-	* [Android](/5PlusDocs/package/android.md)
-	* [iOS](/5PlusDocs/package/ios.md)
-* SDK 下载
-	* [Android](/5PlusDocs/download/android.md)
-	* [iOS](/5PlusDocs/download/ios.md)
+	* [概述](/NativePlugin/README.md)
 <div class="contact-box">
 	<div class="contact-item">
 	  <img src="//img-cdn-qiniu.dcloud.net.cn/uniapp/doc/qq@2x.png" width="20" height="20"/>
