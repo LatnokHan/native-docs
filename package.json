@@ -7,11 +7,15 @@
   "devDependencies": {
     "docsify-server-renderer": "4.7.1",
     "marked": "^0.5.0",
-    "prismjs": "^1.15.0"
+    "prismjs": "^1.15.0",
+    "uglify-js": "^3.8.1",
+    "uglifycss": "0.0.29"
   },
   "scripts": {
+    "serve": "node script/preview.js",
     "dev": "node service",
-    "start": "pm2 start service.js --name native-docs"
+    "start": "pm2 start service.js --name native-docs",
+    "mini": "node script/compress.js"
   },
   "repository": {
     "type": "git",
