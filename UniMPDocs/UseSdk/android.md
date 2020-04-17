@@ -4,14 +4,14 @@ uni小程序SDK原生开发者交流QQ群： 892918401
 
 - JAVA环境 jdk1.7+(最优1.8)
 - Android Studio 下载地址：[Android Studio官网](https://developer.android.google.cn/studio/index.html) OR [Android Studio中文社区](http://www.android-studio.org/)
-- 下载uni小程序 SDK [详情](https://ask.dcloud.net.cn/docs/#https://ask.dcloud.net.cn/article/36939)；
+- 下载uni小程序 SDK [详情](UniMPDocs/SDKDownload/android.md)；
 - [HBuilderX-2.6.2+](https://www.dcloud.io/hbuilderx.html)
 
 ## 集成方法
 
 打开Android Studio加载已有android项目或新建android项目。然后按照以下步骤配置您的项目。
 
-### 第一步、添加基础依赖库及资源文件
+## 添加基础依赖库及资源文件
 
 解压uni小程序SDK包。得到uniMPSDK文件夹。
 uniMPSDK文件夹目录结构说明:
@@ -36,14 +36,21 @@ uniMPSDK文件夹目录结构说明:
 
 Libs文件夹中的`依赖库`是不用全部都集成到宿主项目中。可根据功能增删修改。具体可阅读`Features 依赖库说明.xls`参考修改添加等操作。
 
-以下`依赖库`是宿主必须集成的。不集成会导致小程序无法正常运行
+除视频、地图、分享、支付、登录、直播pusher等功只集成基础模块如下:
 
-```
-uniMPSDK-release.aar
-uniapp-release.aar
-miit_mdid_1.0.10.aar
-android-gif-drawable-release@1.2.17.aar
-```
+ ```
+ uniMPSDK-release.aar  //必须集成
+ uniapp-release.aar //必须集成
+ sqlite-release.aar
+ miit_mdid_1.0.10.aar //必须集成
+ messaging-release.aar
+ iBeacon-release.aar
+ fingerprint-release.aar
+ contacts-release.aar
+ Bluetooth-release.aar
+ android-gif-drawable-release@1.2.17.aar //必须集成
+ ```
+**标注`必须集成`的依赖库一定要集成。否则会导致小程序无法正常运行**
 
 **注意**
 
@@ -111,7 +118,7 @@ dependencies {
 
 ## 生成小程序应用资源
 
-**注意！！！！ uni小程序仅支持v3模式编译的uni应用！！！**
+**注意！！！！ uni小程序仅支持v3模式编译的uni应用！！！ 确保你的uniapp在HX基座可以正常运行**
 
 首先在 HBuilderX 中选择您的 uni-app 项目，如果没有请新建一个 uni-app 项目，如下图，创建 uni-app 项目
 
@@ -266,7 +273,7 @@ try {
 }
 ```
 
-### Tips
+#### Tips
 
  - 以上示例代码可参考uniMPSDK中DEMO示例。
  - 由于uni小程序是多进程架构，在跨进程启动 Activity 的时候，activty 不可以是 singleTask 方式，否则会有页面栈问题（从小程序进入一个 activity，返回之后发现回到主进程了）。
@@ -282,6 +289,7 @@ try {
 #### uni小程序应用资源升级
 
  - 可通过SDK的getAppBasePath获取运行时路径。自行拷贝应用资源到运行时路径。也可通过SDK的releaseWgtToRunPathFromePath方法释放升级后的wgt资源包。直接替换原有应用资源。
+
 #### uni小程序应用删除
 
  - 可通过SDK的getAppBasePath获取运行时路径。遍历查找出要删除的appid应用资源路径。执行file删除操作即可。
