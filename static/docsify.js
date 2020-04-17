@@ -3461,7 +3461,7 @@
 			if (!cacheTree[currentPath] || cacheTree[currentPath].length === 0) {
 				var pathname = currentPath.split('?')[0];
 				for (var i in cacheTree) {
-					if (~i.indexOf(pathname) === 0 && cacheTree[i].length > 0) {
+					if (~i.indexOf(pathname) && cacheTree[i].length > 0) {
 						toc = cacheTree[i];
 						break;
 					}
