@@ -12,10 +12,10 @@
     "uglifycss": "0.0.29"
   },
   "scripts": {
-    "serve": "node script/preview.js",
+    "serve": "node scripts/preview.js",
     "dev": "node service",
     "start": "pm2 start service.js --name native-docs",
-    "mini": "node script/compress.js"
+    "mini": "node scripts/compress.js"
   },
   "repository": {
     "type": "git",
