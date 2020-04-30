@@ -1,14 +1,10 @@
-# 胶囊按钮
-
 ## 概念
-
 胶囊按钮即小程序页面导航栏右侧的按钮，包含`···`菜单按钮和`X`关闭按钮，如下图所示：
 > 目前胶囊按钮的样式不支持修改，框架默认会根据导航栏的颜色自适应胶囊按钮的颜色，不过您可以隐藏默认的胶囊按钮，然后自定义实现
 
 <img src="https://img.cdn.aliyun.dcloud.net.cn/nativedocs/mt1.png" width=35%>
 
 ## 自定义菜单项
-
 点击胶囊按钮左侧的`···`按钮会弹出`ActionSheet`菜单，菜单中的按钮支持自定义，其中上部分的按钮是在小程序中定义，下部分的按钮在宿主中定义，取消按钮为框架默认添加，如下图所示：
 
 <img src="https://img.cdn.aliyun.dcloud.net.cn/nativedocs/mt2.png" width=35%>
@@ -111,17 +107,16 @@ onNavigationBarButtonTap(e) {
 }
 ```
 
-### 隐藏胶囊按钮
-
+## 隐藏胶囊按钮
 uni小程序默认会显示胶囊按钮，您可以将其隐藏（目前只支持全局隐藏，不支持单个页面隐藏）
 
-#### iOS 隐藏胶囊按钮
+### iOS 隐藏胶囊按钮
 
 ```objective-c
 [DCUniMPSDKEngine setMenuButtonHidden:YES];
 ```
 
-#### Android 隐藏胶囊按钮
+### Android 隐藏胶囊按钮
 
 DCSDKInitConfig设置[setCapsule](/UniMPDocs/API/android?id=setcapsule)实现隐藏
 
